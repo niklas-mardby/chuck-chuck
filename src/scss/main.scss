@@ -1,6 +1,27 @@
-$a: #D93A2B;
+$a: #D93A2B; // rename!!! move to colors file
 $b: #F2913D;
 $c: #F2C849;
 $d: #9FB3BF;
 $e: #6B9FBF;
 $f: #C8D2D1;
+
+// Start to code CSS
+// When writing parent child selectors like "section select" start nesting!
+// When writing magic numbers, start using variables
+// When not DRY, be DRY with mixin
+
+body {
+    background-color: $d;
+    font-family: Arial, Helvetica, sans-serif; // move to typography file
+    font-size: 2rem;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .content-box {
+        border: solid 2px $e;
+        background-color: $f;
+    }
+}

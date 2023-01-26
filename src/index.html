@@ -12,16 +12,19 @@
 
 <body>
 
-    <main>
-        <section id="search">
-            <input type="text" name="queryString" id="query-string"><button id="search-button">Search</button>
+    <main class="flex-wrapper">
+        <section class="content-box">
+            <section id="search">
+                <input type="text" name="queryString" id="query-string"><button id="search-button">Search</button>
+            </section>
+            <section>
+                <select name="categories" id="categories">
+                    <option value="empty">Loading categories</option>
+                </select>
+            </section>
         </section>
-        <section>
-            <select name="categories" id="categories">
-                <option value="empty">Loading categories</option>
-            </select>
-        </section>
-        <section id="joke"></section>
+        <section class="content-box" id="joke"></section>
+        <section class="content-box">Favourites</section>
     </main>
 </body>
 
