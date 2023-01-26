@@ -27,7 +27,6 @@ getCategories();
 
 selectCategories.addEventListener("change", async (event) => {
     event.preventDefault();
-    //console.log(selectCategories.value);
     const urlChosenCategory = urlRandom + "?category=" + selectCategories.value;
 
     const response = await fetch(urlChosenCategory);
