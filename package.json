@@ -4,8 +4,7 @@
   "description": "Demo of stuff. See repo",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "kebab": "sass src/scss:dist/css && tsc"
+    "comp": "sass src/scss:dist/css && tsc"
   },
   "repository": {
     "type": "git",
