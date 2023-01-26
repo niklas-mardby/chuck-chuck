@@ -7,6 +7,8 @@ const urlSearch = "https://api.chucknorris.io/jokes/search?query=beard";
 
 const selectCategories = document.querySelector("#categories") as HTMLSelectElement;
 const jokeTag = document.querySelector("#joke") as HTMLElement;
+const inputQueryString = document.querySelector("#query-string") as HTMLInputElement;
+const buttonSearch = document.querySelector("#search-button") as HTMLButtonElement;
 
 async function getCategories() {
     const response = await fetch(urlCategories);
