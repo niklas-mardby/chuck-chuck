@@ -3,7 +3,7 @@
 const urlRandom = "https://api.chucknorris.io/jokes/random";
 // https://api.chucknorris.io/jokes/random?category=food
 const urlCategories = "https://api.chucknorris.io/jokes/categories";
-const urlSearch = "https://api.chucknorris.io/jokes/search?query=beard";
+const urlSearch = "https://api.chucknorris.io/jokes/search?query=";
 
 const selectCategories = document.querySelector("#categories") as HTMLSelectElement;
 const jokeTag = document.querySelector("#joke") as HTMLElement;
@@ -34,4 +34,18 @@ selectCategories.addEventListener("change", async (event) => {
     const data = await response.json();
 
     jokeTag.textContent = data.value;
+});
+
+// Issue: many words?
+// Issue: fix Math.random
+
+buttonSearch.addEventListener("click", async (event) => {
+    event.preventDefault();
+
+    const response = await fetch(urlSearch + inputQueryString.value);
+    const data = await response.json();
+    const arrLength = data.result.length;
+    const randomElement = Math.floor(Math.random() * arrLength);
+
+    jokeTag.textContent = data.result[randomElement].value;
 });
