@@ -10,6 +10,15 @@ const jokeTag = document.querySelector("#joke") as HTMLElement;
 const inputQueryString = document.querySelector("#query-string") as HTMLInputElement;
 const buttonSearch = document.querySelector("#search-button") as HTMLButtonElement;
 
+async function getRandomJoke() {
+    const response = await fetch(urlRandom);
+    const data = await response.json();
+
+    jokeTag.textContent = data.value;
+}
+
+getRandomJoke();
+
 async function getCategories() {
     const response = await fetch(urlCategories);
     const data: string[] = await response.json();
