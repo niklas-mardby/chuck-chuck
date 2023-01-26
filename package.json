@@ -1,0 +1,19 @@
+{
+  "name": "chuck-chuck",
+  "version": "1.0.0",
+  "description": "Demo of stuff. See repo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niklas-mardby/chuck-chuck.git"
+  },
+  "author": "Niklas Mårdby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niklas-mardby/chuck-chuck/issues"
+  },
+  "homepage": "https://github.com/niklas-mardby/chuck-chuck#readme"
+}
