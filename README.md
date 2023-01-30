@@ -10,5 +10,5 @@ We will use https://api.chucknorris.io/
 URLs:
 - https://api.chucknorris.io/jokes/random
 - https://api.chucknorris.io/jokes/categories
-- https://api.chucknorris.io/jokes/search?query=
-
+- https://api.chucknorris.io/jokes/search?query=beard
+- https://api.chucknorris.io/jokes/random?category=food
