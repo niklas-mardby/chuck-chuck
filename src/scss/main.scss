@@ -4,24 +4,78 @@ $c: #F2C849;
 $d: #9FB3BF;
 $e: #6B9FBF;
 $f: #C8D2D1;
+$button-text: white;
+
+// #9dd1f1 // light cornflower blue
+// #031927 // rich black fogra 29
+// #508aa8 // blue ncs
+// #e94f37 // cinnabar
+
+// #ffe45e // minion yellow
+// #e98a15 // fulvous
 
 // Start to code CSS
 // When writing parent child selectors like "section select" start nesting!
 // When writing magic numbers, start using variables
-// When not DRY, be DRY with mixin
+// When not DRY, be DRY with mixin and extend
+// Break out code to different files 
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $d;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif; // move to typography file
-    font-size: 2rem;
+    // font-size: 2rem;
+    min-height: 90vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+h1 {
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
 
 .flex-wrapper {
     display: flex;
     flex-direction: row;
+    border: solid 2px black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
 
     .content-box {
-        border: solid 2px $e;
-        background-color: $f;
+        border: solid 2px black;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
     }
+}
+
+.inner-content-box {
+    border: solid 2px black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+button,
+select,
+input {
+    width: 100%;
+}
+
+button {
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid black;
 }
